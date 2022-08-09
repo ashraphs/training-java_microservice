@@ -5,6 +5,10 @@ The following was discovered as part of building this project:
 
 # Getting Started
 
+### Requirement
+* step 1. docker run --name mbb-local-postgres -d -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres:alpine
+* step 2. Java 8
+
 ### Step to run the services
 #### step 1. Run registry-server
 * mvn clean compile spring-boot:run
