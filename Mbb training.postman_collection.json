@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "169c0e1e-fead-4b63-b6bb-4da33472fe5a",
+		"name": "Mbb training",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19577438"
+	},
+	"item": [
+		{
+			"name": "List system configuration",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/system-configurations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"system-configurations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new system configuration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"TEST 1\",\n    \"value\": \"TEST VALUE 1\",\n    \"type\": \"TEST TYPE 1\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/system-configurations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"system-configurations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update system configuration Copy",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"TEST 1\",\n    \"value\": \"TEST VALUE UPDATE 1\",\n    \"type\": \"TEST TYPE 1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/system-configurations?id=9dbf0d15-844c-461b-8d85-2df4e6b73a57",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"system-configurations"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "9dbf0d15-844c-461b-8d85-2df4e6b73a57"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete system configuration",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"TEST 1\",\n    \"value\": \"TEST VALUE UPDATE 1\",\n    \"type\": \"TEST TYPE 1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/system-configurations?id=9dbf0d15-844c-461b-8d85-2df4e6b73a57",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"system-configurations"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "9dbf0d15-844c-461b-8d85-2df4e6b73a57"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
