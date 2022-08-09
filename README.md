@@ -5,6 +5,21 @@ The following was discovered as part of building this project:
 
 # Getting Started
 
+### Step to run the services
+#### step 1. Run registry-server
+* mvn clean compile spring-boot:run
+
+#### step 2. Run config-server
+* mvn clean compile spring-boot:run -Dspring.profiles.active=dev
+
+#### step 3. Run master-data-service
+* mvn clean compile spring-boot:run
+
+#### step 4. Test in postman
+* export the postman json file
+
+
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
