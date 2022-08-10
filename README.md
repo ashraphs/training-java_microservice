@@ -23,6 +23,14 @@ The following was discovered as part of building this project:
 #### step 4. Test in postman
 * POSTMAN - Use this link to run the API (https://www.postman.com/lively-moon-579376/workspace/public/collection/19577438-286c3385-e4f1-476e-a73b-86202fdfdda0?action=share&creator=19577438)
 
+### Server info
+* MBB-API-GATEWAY-SERVICE | Port: 8881
+* MBB-REGISTRY-SERVER | Port: 8761
+* MBB-CONFIG-SERVER | Port: 8888
+* MBB-MASTER-DATA-SERVICE | Port: 8082 (NO NEED TO POINT TO THIS PORT AS WE USED THE API GATEWAY)
+
+
+
 ### Step to change database configuration
 #### step 1. Run config-server
 #### step 2. Change below configuration in path <mbb-config-server/src/main/resources/config-repo/application-dev.properties>
