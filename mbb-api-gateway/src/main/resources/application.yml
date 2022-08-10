@@ -1,0 +1,14 @@
+server:
+  port: 8881
+
+
+spring:
+  application:
+    name: mbb-api-gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: master-data-service
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/system-configurations/**
