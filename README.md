@@ -1,13 +1,13 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.dlt.mbb-training.mbb-master-data' is invalid and this project uses 'com.dlt.mbbtraining.mbbmasterdata' instead.
+* This documentation is part of training for maybank project.
 
 # Getting Started
 
 ### Requirement
 * step 1. (OPTIONAL) docker run --name mbb-local-postgres -d -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres:alpine
-* step 2. Java 8
+* step 2. Java 8 and above
 * step 3. Postman
 
 ### Step to run the services
