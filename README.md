@@ -6,8 +6,9 @@ The following was discovered as part of building this project:
 # Getting Started
 
 ### Requirement
-* step 1. docker run --name mbb-local-postgres -d -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres:alpine
+* step 1. (OPTIONAL) docker run --name mbb-local-postgres -d -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres:alpine
 * step 2. Java 8
+* step 3. Postman
 
 ### Step to run the services
 #### step 1. Run registry-server
@@ -20,9 +21,43 @@ The following was discovered as part of building this project:
 * mvn clean compile spring-boot:run
 
 #### step 4. Test in postman
-* export the postman json file
+* POSTMAN - Use this link to run the API (https://go.postman.co/workspace/My-Workspace~98f72499-ef7f-4402-87db-633d4c21bcff/collection/19577438-169c0e1e-fead-4b63-b6bb-4da33472fe5a?action=share&creator=19577438)
+
+### Step to change database configuration
+#### step 1. Run config-server
+#### step 2. Change below configuration in path <mbb-config-server/src/main/resources/config-repo/application-dev.properties>
+`spring.datasource.url=jdbc:postgresql://localhost:5432/postgres`
+`spring.database.scheme=mbb_core`
+`spring.datasource.username=postgres`
+`spring.datasource.password=postgres`
 
 
+### Guideline Traning Documentation
+* Spring Cloud (https://spring.io/projects/spring-cloud)
+  * Spring Cloud Netflix
+  * Spring Cloud Config
+  * Spring Cloud OpenFeign
+  * Spring Cloud Connector (MQ)
+  * Spring Cloud Security
+  * Spring Cloud Gateway
+  * Zuul Gateway
+* Spring Data (https://spring.io/projects/spring-data)
+  * Spring Data JDBC
+  * Spring Data JPA
+  * Spring Data Redis
+* Monitor
+  * Elastic Logstash
+  * Prometheus
+  * Datadog
+* Others
+  * Swagger (https://swagger.io/docs/)
+  * Kubernetes / Docker
+    * https://kubernetes.io/docs/home/
+    * https://www.docker.com/get-started/
+* Microservice Architecture
+  * https://dzone.com/articles/top-5-microservices-architecture-and-design-best-p
+  * https://towardsdatascience.com/microservice-architecture-and-its-10-most-important-design-patterns-824952d7fa41
+ 
 
 ### Reference Documentation
 For further reference, please consider the following sections:
