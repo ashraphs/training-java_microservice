@@ -5,6 +5,11 @@ The following was discovered as part of building this project:
 ### Concept of Microservices
 ![image](https://user-images.githubusercontent.com/29218702/183829515-ef156340-b5e6-4393-bfaf-c61ceb71cc2d.jpeg)
 
+* Microservice Architecture
+  * https://aws.amazon.com/microservices/
+  * https://dzone.com/articles/top-5-microservices-architecture-and-design-best-p
+  * https://towardsdatascience.com/microservice-architecture-and-its-10-most-important-design-patterns-824952d7fa41
+  * https://javarevisited.blogspot.com/2021/09/microservices-design-patterns-principles.html
 
 # Getting Started
 
@@ -66,11 +71,7 @@ The following was discovered as part of building this project:
   * Kubernetes / Docker
     * https://kubernetes.io/docs/home/
     * https://www.docker.com/get-started/
-* Microservice Architecture
-  * https://aws.amazon.com/microservices/
-  * https://dzone.com/articles/top-5-microservices-architecture-and-design-best-p
-  * https://towardsdatascience.com/microservice-architecture-and-its-10-most-important-design-patterns-824952d7fa41
-  * https://javarevisited.blogspot.com/2021/09/microservices-design-patterns-principles.html
+
  
 
 ### Reference Documentation
