@@ -26,10 +26,10 @@ The following was discovered as part of building this project:
 ### Step to change database configuration
 #### step 1. Run config-server
 #### step 2. Change below configuration in path <mbb-config-server/src/main/resources/config-repo/application-dev.properties>
-`spring.datasource.url=jdbc:postgresql://localhost:5432/postgres`
-`spring.database.scheme=mbb_core`
-`spring.datasource.username=postgres`
-`spring.datasource.password=postgres`
+`spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
+spring.database.scheme=mbb_core
+spring.datasource.username=postgres
+spring.datasource.password=postgres`
 
 
 ### Guideline Traning Documentation
