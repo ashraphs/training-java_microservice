@@ -21,7 +21,7 @@ The following was discovered as part of building this project:
 * mvn clean compile spring-boot:run
 
 #### step 4. Test in postman
-* POSTMAN - Use this link to run the API (https://go.postman.co/workspace/My-Workspace~98f72499-ef7f-4402-87db-633d4c21bcff/collection/19577438-169c0e1e-fead-4b63-b6bb-4da33472fe5a?action=share&creator=19577438)
+* POSTMAN - Use this link to run the API (https://www.postman.com/lively-moon-579376/workspace/public/collection/19577438-286c3385-e4f1-476e-a73b-86202fdfdda0?action=share&creator=19577438)
 
 ### Step to change database configuration
 #### step 1. Run config-server
