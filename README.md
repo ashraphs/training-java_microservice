@@ -17,6 +17,7 @@ The following was discovered as part of building this project:
 * step 1. (OPTIONAL) docker run --name mbb-local-postgres -d -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres:alpine
 * step 2. Java 8 and above
 * step 3. Postman
+* Step 4. Maven
 
 ### Step to run the services
 #### step 1. Run registry-server
