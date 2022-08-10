@@ -27,9 +27,9 @@ The following was discovered as part of building this project:
 #### step 1. Run config-server
 #### step 2. Change below configuration in path <mbb-config-server/src/main/resources/config-repo/application-dev.properties>
 `spring.datasource.url=jdbc:postgresql://localhost:5432/postgres` <br>
-* `spring.database.scheme=mbb_core`
-* `spring.datasource.username=postgres`
-* `spring.datasource.password=postgres`
+`spring.database.scheme=mbb_core` <br>
+`spring.datasource.username=postgres` <br>
+`spring.datasource.password=postgres`
 
 
 ### Guideline Traning Documentation
