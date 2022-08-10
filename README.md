@@ -3,7 +3,7 @@ The following was discovered as part of building this project:
 
 * This documentation is part of training for maybank project.
 ### Concept of Microservices
-![alt text]([http://url/to/img.png](https://d2m6ke2px6quvq.cloudfront.net/uploads/2020/09/11/cda4db94-ac16-43ba-82c4-53632154afc7.jpg)
+![image](https://user-images.githubusercontent.com/29218702/183829515-ef156340-b5e6-4393-bfaf-c61ceb71cc2d.jpeg)
 
 
 # Getting Started
