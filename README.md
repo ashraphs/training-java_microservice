@@ -64,8 +64,10 @@ The following was discovered as part of building this project:
     * https://kubernetes.io/docs/home/
     * https://www.docker.com/get-started/
 * Microservice Architecture
+  * https://aws.amazon.com/microservices/
   * https://dzone.com/articles/top-5-microservices-architecture-and-design-best-p
   * https://towardsdatascience.com/microservice-architecture-and-its-10-most-important-design-patterns-824952d7fa41
+  * https://javarevisited.blogspot.com/2021/09/microservices-design-patterns-principles.html
  
 
 ### Reference Documentation
