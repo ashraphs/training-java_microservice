@@ -12,3 +12,4 @@ spring:
           uri: http://localhost:8082/
           predicates:
             - Path=/system-configurations/**
+

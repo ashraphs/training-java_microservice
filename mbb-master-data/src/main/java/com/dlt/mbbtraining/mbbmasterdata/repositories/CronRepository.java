@@ -9,4 +9,6 @@ import com.dlt.mbbtraining.mbbmasterdata.entities.Cron;
 public interface CronRepository extends MasterEntityRepository<Cron> {
 
     Cron findByNameAndActiveIsTrueAndDeletedIsFalse(String name);
+
+    Cron findByName(String name);
 }

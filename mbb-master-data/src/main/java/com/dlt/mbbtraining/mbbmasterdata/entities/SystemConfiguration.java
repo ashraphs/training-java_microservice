@@ -33,4 +33,6 @@ public class SystemConfiguration extends MasterEntity {
     @Column(name = "value")
     private String value;
 
+
+
 }

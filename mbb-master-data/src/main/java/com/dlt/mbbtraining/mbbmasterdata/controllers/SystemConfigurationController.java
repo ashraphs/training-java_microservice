@@ -30,6 +30,7 @@ public class SystemConfigurationController {
 
     /**
      * GET ALL LIST OF SYSTEM CONFIGURATION
+     *
      * @return response of System configuration
      */
     @GetMapping
@@ -40,6 +41,7 @@ public class SystemConfigurationController {
 
     /**
      * GET ONE SYSTEM CONFIGURATION
+     *
      * @param name = name of configuration to filter parameter
      * @return response of System configuration
      */
@@ -55,7 +57,8 @@ public class SystemConfigurationController {
 
     /**
      * CREATE ONE NEW SYSTEM CONFIGURATION
-     * @param systemConfig = body request of system configuration
+     *
+     * @param systemConfig  = body request of system configuration
      * @param bindingResult = result of the validation by checking whether got error or not
      * @return response of System configuration
      */
@@ -83,14 +86,15 @@ public class SystemConfigurationController {
 
     /**
      * UPDATE SYSTEM CONFIGURATION
-     * @param id = system configuration id
-     * @param systemConfig = request body
+     *
+     * @param id            = system configuration id
+     * @param systemConfig  = request body
      * @param bindingResult = result of the validation by checking whether got error or not
      * @return response of System configuration
      */
     @PatchMapping(path = "/{id}", consumes = "application/json")
     public ResponseEntity<Object> update(@PathVariable String id, @Valid @RequestBody SystemConfigRequest systemConfig, BindingResult bindingResult) {
-        log.info("ID: {}",id);
+        log.info("ID: {}", id);
 
         if (bindingResult.hasErrors()) {
             return new ResponseEntity<>(
@@ -118,6 +122,7 @@ public class SystemConfigurationController {
 
     /**
      * DELETE SYSTEM CONFIGURATION
+     *
      * @param id = system configuration id
      * @return response of System configuration
      */
