@@ -2,6 +2,14 @@
 The following was discovered as part of building this project:
 
 * This documentation is part of training for maybank project.
+### Concept of Microservices
+![image](https://user-images.githubusercontent.com/29218702/183829515-ef156340-b5e6-4393-bfaf-c61ceb71cc2d.jpeg)
+
+* Microservice Architecture
+  * https://aws.amazon.com/microservices/
+  * https://dzone.com/articles/top-5-microservices-architecture-and-design-best-p
+  * https://towardsdatascience.com/microservice-architecture-and-its-10-most-important-design-patterns-824952d7fa41
+  * https://javarevisited.blogspot.com/2021/09/microservices-design-patterns-principles.html
 
 # Getting Started
 
@@ -9,6 +17,7 @@ The following was discovered as part of building this project:
 * step 1. (OPTIONAL) docker run --name mbb-local-postgres -d -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres:alpine
 * step 2. Java 8 and above
 * step 3. Postman
+* Step 4. Maven
 
 ### Step to run the services
 #### step 1. Run registry-server
@@ -22,6 +31,14 @@ The following was discovered as part of building this project:
 
 #### step 4. Test in postman
 * POSTMAN - Use this link to run the API (https://www.postman.com/lively-moon-579376/workspace/public/collection/19577438-286c3385-e4f1-476e-a73b-86202fdfdda0?action=share&creator=19577438)
+
+### Server info
+* MBB-API-GATEWAY-SERVICE | Port: 8881
+* MBB-REGISTRY-SERVER | Port: 8761
+* MBB-CONFIG-SERVER | Port: 8888
+* MBB-MASTER-DATA-SERVICE | Port: 8082 (NO NEED TO POINT TO THIS PORT AS WE USED THE API GATEWAY)
+
+
 
 ### Step to change database configuration
 #### step 1. Run config-server
@@ -50,13 +67,12 @@ The following was discovered as part of building this project:
   * Prometheus
   * Datadog
 * Others
+  * https://projectlombok.org
   * Swagger (https://swagger.io/docs/)
   * Kubernetes / Docker
     * https://kubernetes.io/docs/home/
     * https://www.docker.com/get-started/
-* Microservice Architecture
-  * https://dzone.com/articles/top-5-microservices-architecture-and-design-best-p
-  * https://towardsdatascience.com/microservice-architecture-and-its-10-most-important-design-patterns-824952d7fa41
+
  
 
 ### Reference Documentation
