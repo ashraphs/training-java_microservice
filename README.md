@@ -48,6 +48,12 @@ The following was discovered as part of building this project:
 `spring.datasource.username=postgres` <br>
 `spring.datasource.password=postgres`
 
+### Step to install Redis in docker
+### step 1. docker network create -d bridge redisnet
+### step 2. docker run -d -p 6379:6379 --name myredis --network redisnet redis
+### step 3. brew install redis
+### step 4. brew tap ringohub/redis-cli
+### code reference: https://developer.redis.com/develop/java/redis-and-spring-course/lesson_2/
 
 ### Guideline Traning Documentation
 * Spring Cloud (https://spring.io/projects/spring-cloud)
