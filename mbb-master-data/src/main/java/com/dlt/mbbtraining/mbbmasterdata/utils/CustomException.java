@@ -17,6 +17,8 @@ public class CustomException extends Exception {
         super(message, cause);
     }
 
+
+
     public CustomException(Throwable cause) {
         super(cause);
     }

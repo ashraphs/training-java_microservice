@@ -3,7 +3,6 @@ package com.dlt.mbbtraining.mbbmasterdata.configurations;
 import com.dlt.mbbtraining.mbbmasterdata.repositories.impl.MasterEntityRepositoryImpl;
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -67,5 +66,6 @@ public class AppConfiguration {
     public PlatformTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
         return new JpaTransactionManager(entityManagerFactory);
     }
+
 
 }

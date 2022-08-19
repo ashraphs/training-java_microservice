@@ -5,7 +5,6 @@ import com.dlt.mbbtraining.mbbmasterdata.controllers.request.UserRequest;
 import com.dlt.mbbtraining.mbbmasterdata.controllers.response.UserResponse;
 import com.dlt.mbbtraining.mbbmasterdata.entities.Address;
 import com.dlt.mbbtraining.mbbmasterdata.entities.User;
-import com.dlt.mbbtraining.mbbmasterdata.repositories.AddressRepository;
 import com.dlt.mbbtraining.mbbmasterdata.repositories.UserRepository;
 import com.dlt.mbbtraining.mbbmasterdata.services.UserService;
 import com.dlt.mbbtraining.mbbmasterdata.utils.CustomException;
@@ -17,8 +16,6 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import javax.validation.constraints.NotNull;
-import java.lang.reflect.InvocationTargetException;
-import java.sql.SQLException;
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
@@ -35,11 +32,8 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
 
-    @Autowired
-    private AddressRepository addressRepository;
-
     @Override
-    public UserResponse getUser(UserRequest request) throws CustomException, InvocationTargetException, IllegalAccessException {
+    public UserResponse getUser(UserRequest request) throws CustomException {
         UserResponse response;
         Set<UserResponse.AddressResponse> addressResponseList = new HashSet<>();
 
@@ -86,7 +80,7 @@ public class UserServiceImpl implements UserService {
 
     @Transactional
     @Override
-    public UserResponse createNewUser(@NotNull NewUserRequest request) throws CustomException, InvocationTargetException, IllegalAccessException, SQLException {
+    public UserResponse createNewUser(@NotNull NewUserRequest request) throws CustomException {
         log.info("Request: {}", request);
 
         UserResponse response = null;
