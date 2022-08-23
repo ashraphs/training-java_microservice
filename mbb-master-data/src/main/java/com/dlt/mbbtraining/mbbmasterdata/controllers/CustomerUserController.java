@@ -28,7 +28,7 @@ public class CustomerUserController {
 
 
     @GetMapping
-    public MasterResponse getOneUser(@Valid @RequestBody UserRequest request) {
+    public MasterResponse<?> getOneUser(@Valid @RequestBody UserRequest request) {
         try {
             UserResponse userResponse = userService.getUser(request);
             log.info("Response: {}", userResponse);
@@ -74,6 +74,33 @@ public class CustomerUserController {
                     .build();
         }
     }
+
+
+    @GetMapping(path = "/{environment}")
+    public MasterResponse<?> createNewUser(@RequestBody String environment) {
+        String envPath = GlobalUtil.removeWhiteSpaceAndMakeitCapital(environment);
+        String response = "";
+
+        switch (envPath) {
+            case "INTERNAL":
+                response = "Running from INTERNAL path";
+                break;
+
+            case "EXTERNAL":
+                response = "Running from EXTERNAL path";
+                break;
+        }
+
+        return MasterResponse.builder()
+                .responseValue(HttpStatus.OK.value())
+                .message(null)
+                .currentTimestamp(GlobalUtil.currentMalaysiaTimestampIso8601())
+                .t(response)
+                .build();
+
+    }
+
+
 }
 
 
