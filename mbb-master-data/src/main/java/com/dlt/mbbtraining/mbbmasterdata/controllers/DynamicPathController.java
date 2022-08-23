@@ -7,10 +7,7 @@ import com.dlt.mbbtraining.mbbmasterdata.utils.enums.EnvironmentRegion;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.HandlerMapping;
 
 import javax.servlet.http.HttpServletRequest;
@@ -28,11 +25,10 @@ public class DynamicPathController {
     private UserService userService;
 
     /**
-     *
      * @param environment whether its running from internal or external
      * @return the Masterresponse
      */
-    @GetMapping(path = "/{environment}")
+    @GetMapping(path = "{environment}")
     public MasterResponse<?> getSamplePath(@RequestBody String environment) {
         String envPath = GlobalUtil.removeWhiteSpaceAndMakeitCapital(environment);
         String response = "";
@@ -71,10 +67,10 @@ public class DynamicPathController {
         log.info("Full Path: {}", requestPath);
 
         String regionPath = new GlobalUtil().findRegionMatchAPiPath(requestPath);
-        if (regionPath.equals(EnvironmentRegion.M2UBIZ.name())){
+        if (regionPath.equals(EnvironmentRegion.M2UBIZ.name())) {
             //  CODE TO HIT THE PATH OF MALAYSIA API
 
-        }else if (regionPath.equals(EnvironmentRegion.SG2UBIZ.name())){
+        } else if (regionPath.equals(EnvironmentRegion.SG2UBIZ.name())) {
             //  CODE TO HIT THE PATH OF SINGAPORE API
 
         }
@@ -87,6 +83,7 @@ public class DynamicPathController {
                 .build();
 
     }
+
 
 
 }
