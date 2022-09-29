@@ -34,5 +34,4 @@ public class SystemConfiguration extends MasterEntity {
     private String value;
 
 
-
 }

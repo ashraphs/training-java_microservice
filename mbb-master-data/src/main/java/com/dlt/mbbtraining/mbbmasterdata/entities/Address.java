@@ -4,7 +4,9 @@ import com.dlt.mbbtraining.mbbmasterdata.entities.base.MasterEntity;
 import com.dlt.mbbtraining.mbbmasterdata.utils.enums.AddressType;
 import lombok.*;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**
  * Created by Amir on 12/4/2019 12:48 PM

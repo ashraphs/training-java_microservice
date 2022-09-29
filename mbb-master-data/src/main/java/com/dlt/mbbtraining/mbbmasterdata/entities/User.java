@@ -3,7 +3,6 @@ package com.dlt.mbbtraining.mbbmasterdata.entities;
 import com.dlt.mbbtraining.mbbmasterdata.entities.base.MasterEntity;
 import com.dlt.mbbtraining.mbbmasterdata.utils.enums.IdType;
 import lombok.*;
-import reactor.util.annotation.Nullable;
 
 import javax.persistence.*;
 import java.util.HashSet;
